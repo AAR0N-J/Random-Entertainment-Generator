@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+  <h1>Random Song Generator!</h1>
+  <br> <br>
+  <form action="/songs">
+    Song Keyword:
+    <input type="text" name="term">
+  
+    <button class="btn btn-secondary"> Search! </button>
+  </form>
+  <br>
+  <p><strong>A Song for you to try:</strong><br><audio controls preload="none" style="width:500px;">
+ <source src="<%- preview %>" type="audio/mp4" />
+ </audio> <br> <%- song %> by <%- artist %></p>
+<%- include("partials/footer.ejs") %>

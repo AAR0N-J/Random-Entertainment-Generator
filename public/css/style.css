@@ -1,0 +1,45 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body{
+  text-align: center;
+}
+#foot{
+  height: 50%;
+  max-height: 100px;
+  width: 50%;
+  max-width: 150px;
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color: #62a363;
+    padding: 10px;
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+#footWords{
+  padding-top: 20px;
+}
+nav,a{
+  text-align: center;
+  font-size: 15px;
+  background-color: #62a363;
+  color: black;
+  padding: 15px;
+}
+.index{
+  background-color: #ffffff;
+  border-radius: 4em;
+  color: black;
+  padding: 10px;
+}
+p{
+  padding: 20px;
+}
+h1{
+  padding-top: 20px;
+}

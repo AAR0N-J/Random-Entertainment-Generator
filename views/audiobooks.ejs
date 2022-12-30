@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+  <h1>Random Audiobook Generator!</h1>
+  <br> <br>
+  <form action="/audiobooks">
+    Audiobook Keyword:
+    <input type="text" name="term">
+  
+    <button class="btn btn-secondary"> Search! </button>
+  </form>
+  <br>
+  <p><strong>An Audiobook for you to try:</strong><br><audio controls preload="none" style="width:500px;">
+ <source src="<%- preview %>" type="audio/mp4" />
+ </audio> <br> <%- book %> by <%- author %></p>
+   <br>
+   <p><strong>Description: </strong><%- description %></p>
+<%- include("partials/footer.ejs") %>

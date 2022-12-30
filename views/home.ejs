@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+  <h1>Welcome the Random Entertainment Generator!</h1>
+  <p>Are you indecisive when it comes to picking what to listen to or say as your next joke at a party? If you are unsure then you came to the right place. All is randomly generated below, but you can refine the results some in each page. Except jokes, you cannot refine what kind of jokes you get because I said so.</p>
+  <p><strong>A Joke:</strong> <%- joke.body %></p>
+  <p><strong>A Song:</strong><br><audio controls preload="none" style="width:500px;">
+ <source src="<%- preview %>" type="audio/mp4" />
+ </audio> <br> <%- song %> by <%- artist %></p>
+   <br>
+  <p><strong>An Audiobook:</strong><br><audio controls preload="none" style="width:500px;">
+ <source src="<%- previewbook %>" type="audio/mp4" />
+ </audio> <br> <%- book %> by <%- author %></p>
+   <br>
+   <p><strong>Description of the audiobook: </strong><%- description %></p>
+<%- include("partials/footer.ejs") %>
